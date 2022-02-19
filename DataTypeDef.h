@@ -8,6 +8,7 @@ enum class enMainChoice
 {
     enSignUp=1,
     enSignIn,
+    enShowAcc,
     enExit
 };
 

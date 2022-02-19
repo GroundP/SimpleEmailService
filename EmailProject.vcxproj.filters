@@ -19,6 +19,9 @@
     <ClCompile Include="MailHandler.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="FileSaver.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="MainController.h">
@@ -31,6 +34,9 @@
       <Filter>소스 파일</Filter>
     </ClInclude>
     <ClInclude Include="DataTypeDef.h">
+      <Filter>소스 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="FileSaver.h">
       <Filter>소스 파일</Filter>
     </ClInclude>
   </ItemGroup>

@@ -104,7 +104,7 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
     </ClCompile>
     <Link>
@@ -140,7 +140,7 @@
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
     </ClCompile>
     <Link>
@@ -153,12 +153,14 @@
   <ItemGroup>
     <ClCompile Include="AccountHandler.cpp" />
     <ClCompile Include="EmailProject.cpp" />
+    <ClCompile Include="FileSaver.cpp" />
     <ClCompile Include="MailHandler.cpp" />
     <ClCompile Include="MainController.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="AccountHandler.h" />
     <ClInclude Include="DataTypeDef.h" />
+    <ClInclude Include="FileSaver.h" />
     <ClInclude Include="MailHandler.h" />
     <ClInclude Include="MainController.h" />
   </ItemGroup>

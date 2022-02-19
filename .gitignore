@@ -33,3 +33,5 @@
 .vs/
 Debug/
 x64/
+Accounts.txt
+MailList.txt

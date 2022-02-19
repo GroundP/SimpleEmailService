@@ -8,6 +8,7 @@ using namespace std;
 
 void CMainController::run()
 {
+
     CAccountHandler accountHandler;
     CMailHandler mailHandler;
     while ( true )
@@ -31,9 +32,12 @@ void CMainController::run()
             }
         }
         break;
+        case enMainChoice::enShowAcc:
+            accountHandler.showAccounts();
+            break;
         case enMainChoice::enExit:
             cout << "[Execute] The program will be exited."<< endl;
-            Sleep(1000);
+            Sleep(500);
             bExit = true;
             break;
         default:
@@ -52,12 +56,19 @@ enMainChoice CMainController::chooseMain()
     cout << "<< EMAIL SERVEICE >>" << endl;
     cout << "1. SIGN UP" << endl;
     cout << "2. SIGN IN" << endl;
-    cout << "3. EXIT" << endl;
+    cout << "3. SHOW ACCOUNTS" << endl;
+    cout << "4. EXIT" << endl;
 
     cout << "\n[Input] ";
 
     int input;
     cin >> input;
+
+    if ( cin.fail() )
+    {
+        cin.clear();
+        cin.ignore(1024, '\n');
+    }
 
     return static_cast<enMainChoice>(input);
 }

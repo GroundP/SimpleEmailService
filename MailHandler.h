@@ -1,13 +1,8 @@
 #pragma once
 
 #include "DataTypeDef.h"
-
 class CMailHandler
 {
-    enum enMail
-    {
-
-    };
 
 public:
     CMailHandler();
@@ -19,7 +14,9 @@ public:
 private:
     enMailChoice chooseMailFunc();
     void showProcess();
-    void sendMailProcess();
+    void sendMailProcess(const std::set<std::string>& accounts);
+    unsigned int getMaxId();
+
 private:
     std::map<std::string, std::vector<Mail>> mailList;
     std::string curAccount;
